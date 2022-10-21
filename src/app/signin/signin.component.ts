@@ -10,21 +10,18 @@ export class SigninComponent implements OnInit {
 
   constructor(private myrouter:Router) { }
 
-  name=""
+  email=""
   password=""
 
   readValues=()=>{
     let data={
-      "name":this.name,
+      "email":this.email,
       "password":this.password
     }
-if (this.name=="admin" && this.password=="admin"){
-  this.myrouter.navigate(["/signup"])
-} else {
-  alert("invalid")
-}
 console.log(data)
-  }
+}
+
+  
 
   ngOnInit(): void {
   }
