@@ -1,43 +1,53 @@
 <div class="container">
     <div class="row">
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row">
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
+<label for="" class="form-label">Name</label>
+<input type="text" class="form-control" name="name" [(ngModel)]="name">
+                </div>
+               
+               
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
+                    <label for="" class="form-label">dob</label>
+                    <input type="date" class="form-control" name="dob" [(ngModel)]="dob">
 
-         
-  <table class="table">
-    <thead>
-      <tr>
-        <th scope="col">Name</th>
-        <th scope="col">DOB</th>
-        <th scope="col">Phone</th>
-        <th scope="col">Place</th>
-        <th scope="col">Email</th>
-        <th scope="col">Password</th>
-        <th scope="col">Confirm Password</th>
+                </div>
 
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
+                    <label for="" class="form-label">Phone Number</label>
+                    <input type="text" class="form-control" name="phone" [(ngModel)]="phone">
 
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
+                    <label for="" class="form-label">Place</label>
+                    <input type="text" class="form-control" name="place" [(ngModel)]="place">
 
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let i of signupData">
-       
+                </div>
 
-        <td>{{i.name}}</td>
-        <td>{{i.dob}}</td>
-        <td>{{i.phone}}</td>
-        <td>{{i.place}}</td>
-        <td>{{i.email}}</td>
-        <td>{{i.password}}</td>
-        <td>{{i.co_pass}}</td>
-        <tr><a href="/"><button class="btn btn-success"></button></a></tr>
-        
-       
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
+                    <label for="" class="form-label">Email</label>
+                    <input type="email" class="form-control" name="email" [(ngModel)]="email">
 
-      
-     
-    </tbody>
-  </table>
-
+                </div>
+               
+               
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
+                    <label for="" class="form-label">Password</label>
+                    <input type="password" class="form-control" name="password" [(ngModel)]="password">
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
+                    <label for="" class="form-label">Confirm Password</label>
+                    <input type="password" class="form-control" name="confirmpass" [(ngModel)]="confirmpass">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <button class="btn btn-primary"(click)="readValues()">Signup</button>
+                </div>
+               
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <a routerLink="/">Back to Signin</a>
+                </div>
+            </div>
         </div>
     </div>
 </div>
